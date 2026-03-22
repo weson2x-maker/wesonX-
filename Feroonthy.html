@@ -178,6 +178,16 @@ footer a{
     font-weight:bold;
 }
 footer a:hover{ color:#daa520; }
+<style>
+  img {
+    opacity: 0; /* الصور مخفية في البداية */
+  }
+
+  .show img {
+    opacity: 1; /* تظهر لما كل الصور تتحمل */
+    transition: 0.3s; /* حركة ناعمة للظهور */
+  }
+</style>
 </style>
 </head>
 
@@ -491,5 +501,21 @@ document.querySelectorAll("#chaptersMenu a").forEach(link=>{
   <body>
 
     <script src="./script.js"></script>
+      <script>
+  const images = document.querySelectorAll("img");
+  let loaded = 0;
+
+  images.forEach(img => {
+    const temp = new Image();
+    temp.src = img.src;
+
+    temp.onload = () => {
+      loaded++;
+      if (loaded === images.length) {
+        document.body.classList.add("show"); // كل الصور ظهرت مرة واحدة
+      }
+    };
+  });
+      </script>
   </body>
 </html>
