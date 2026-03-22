@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Feroonthy X</title>
-<meta name="description" content="Weson X رواية خيال مصري عن انهيار الأركان وبداية عصر الفوضى وصراع الأعراق من أجل النجاة. اقرأ جميع الفصول الآن.">
-<meta name="keywords" content="Weson X, رواية خيال عربية, عصر الفوضى, رواية الفوضي والمغامرات">
+<meta name="description" content="Feroonthy X رواية خيال مصري عن انهيار الأركان وبداية عصر الفوضى وصراع الأعراق من أجل النجاة. اقرأ جميع الفصول الآن.">
+<meta name="keywords" content="Feroonthy X, رواية خيال عربية, عصر الفوضى, رواية الفوضي والمغامرات">
 <meta name="author" content="ادم ايهاب احمد عبد الفتاح حسن الكتبي">
 <meta name="robots" content="index, follow">
 
@@ -179,6 +179,14 @@ footer a{
 }
 footer a:hover{ color:#daa520; }
 
+  img.lazy {
+    opacity: 0;                 /* الصور مخفية في البداية */
+    transition: opacity 0.5s ease; /* حركة Fade ناعمة */
+  }
+
+  img.lazy.show {
+    opacity: 1;                 /* تظهر عند التحميل */
+  }
 </style>
 </head>
 
@@ -204,7 +212,10 @@ footer a:hover{ color:#daa520; }
 <!-- ===== hero ===== -->
 <section class="hero" id="homeSection">
     <h1>Feroonthy X</h1>
-    <img src="IMG_٢٠٢٦٠٣١٦_٠٤٤٨٢٨.png" alt="ريشة التوازن بين الفوضى" width="200">
+    <img src="IMG_٢٠٢٦٠٣١٦_٠٤٤٨٢٨.png" 
+     alt="ريشة التوازن بين الفوضى" 
+     width="200" 
+     loading="lazy">
     <div class="summary">
         الاركان تهتز، والأرض تُزلزل، والسماء تُصدع، الفرعون
 سيتحرر، نبوءة تزلزل العالم، ام خرافة لا تُسمع؟
@@ -422,18 +433,23 @@ footer a:hover{ color:#daa520; }
 سيتحرر، نبوءة تزلزل العالم، ام خرافة لا تُسمع؟</p>
         <h2> اهم الشخصيات الرئيسية:</h2>
  <p>ادم</p>
-        <img src="file_00000000e79071f4a2efcd05c9039cfa.png" alt="فتي وسيم" width="200">
- <p>إيريس</p>
-        <img src="IMG_٢٠٢٦٠٣٢١_٠٠١٤١٦.png" alt="امرأة جميلة ذات شعر ابيض" width="200">
- <p>مالك</p>
-        <img src="IMG_٢٠٢٦٠٣٢١_٠٨٢٦٣٥.png" alt="فتي وسيم" width="200">
- <p>ماريا</p>
-       <img src="file_00000000fd0c720a80e604112924d779.png" alt="امرأة جميلة ذات شعر احمر" width="200">
- <p>زين</p>
-        <img src="IMG_٢٠٢٦٠٣٢١_٠٨٥٩٠٢.png" alt="امير وسيم" width="200">  
- <p>لين</p>
-        <img src="file_00000000f038724689819f8ab068add9.png" alt="امرأة جميلة ذات شعر بني" width="200">
+<p>ادم</p>
+<img src="file_00000000e79071f4a2efcd05c9039cfa.png" alt="فتي وسيم" width="200" class="lazy">
 
+<p>إيريس</p>
+<img src="IMG_٢٠٢٦٠٣٢١_٠٠١٤١٦.png" alt="امرأة جميلة ذات شعر ابيض" width="200" class="lazy">
+
+<p>مالك</p>
+<img src="IMG_٢٠٢٦٠٣٢١_٠٨٢٦٣٥.png" alt="فتي وسيم" width="200" class="lazy">
+
+<p>ماريا</p>
+<img src="file_00000000fd0c720a80e604112924d779.png" alt="امرأة جميلة ذات شعر احمر" width="200" class="lazy">
+
+<p>زين</p>
+<img src="IMG_٢٠٢٦٠٣٢١_٠٨٥٩٠٢.png" alt="امير وسيم" width="200" class="lazy">  
+
+<p>لين</p>
+<img src="file_00000000f038724689819f8ab068add9.png" alt="امرأة جميلة ذات شعر بني" width="200" class="lazy">
 
         <h2>الكاتب:</h2>
         <p>ادم ايهاب احمد عبد الفتاح حسن الكتبي</p>
@@ -477,7 +493,7 @@ document.querySelectorAll("#chaptersMenu a").forEach(link=>{
 </script>
 <!-- ===== كلمات مفتاحية مخفية لتحسين SEO ===== -->
 <div style="display:none;">
-    Weson X, رواية خيال عربية, رواية فانتازيا مصرية, عصر الفوضى, صراع الأعراق, مغامرات ملحمية, أحداث ملحمية, شخصيات رئيسية, قصص خيالية, فوضى عالمية, انهيار الأركان, نجاة الأجناس, قوى خارقة, مملكة فانتازية, عالم بديل, مغامرات وشخصيات, رواية عربية حديثة, بداية عصر جديد, ابدأ رحلة ملحمية مع Weson X, اقرأ أحدث فصول الرواية الآن, تجربة فانتازيا عربية لا مثيل لها, تتابع أحداث عصر الفوضى مع كل فصل, تعرف على الشخصيات الرئيسية ومغامراتهم
+    Feroonthy X, رواية خيال عربية, رواية فانتازيا مصرية, عصر الفوضى, صراع الأعراق, مغامرات ملحمية, أحداث ملحمية, شخصيات رئيسية, قصص خيالية, فوضى عالمية, انهيار الأركان, نجاة الأجناس, قوى خارقة, مملكة فانتازية, عالم بديل, مغامرات وشخصيات, رواية عربية حديثة, بداية عصر جديد, ابدأ رحلة ملحمية مع Weson X, اقرأ أحدث فصول الرواية الآن, تجربة فانتازيا عربية لا مثيل لها, تتابع أحداث عصر الفوضى مع كل فصل, تعرف على الشخصيات الرئيسية ومغامراتهم
 </div>
 
 </body>
@@ -492,6 +508,21 @@ document.querySelectorAll("#chaptersMenu a").forEach(link=>{
   <body>
 
     <script src="./script.js"></script>
+<script>
+  const lazyImages = document.querySelectorAll('img.lazy');
 
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const img = entry.target;
+        img.classList.add('show'); // تفعيل Fade
+        observer.unobserve(img);   // وقف المراقبة بعد الظهور
+      }
+    });
+  });
+
+  lazyImages.forEach(img => observer.observe(img));
+</script>
+      
   </body>
 </html>
